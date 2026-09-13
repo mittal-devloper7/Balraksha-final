@@ -1,0 +1,1 @@
+import {ShieldCheck} from 'lucide-react';export default function EmptyState({title='Nothing here yet',message}){return <div className="state-card"><div className="empty-icon"><ShieldCheck size={26}/></div><h3>{title}</h3><p>{message}</p></div>}

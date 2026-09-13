@@ -1,0 +1,1 @@
+import Button from './Button';export default function ErrorState({message='Unable to load this information.',onRetry}){return <div className="state-card error-state"><div className="state-icon">!</div><h3>Something went wrong</h3><p>{message}</p>{onRetry&&<Button variant="secondary" onClick={onRetry}>Try Again</Button>}</div>}

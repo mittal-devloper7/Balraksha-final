@@ -1,0 +1,1 @@
+import Badge from './Badge';import {pretty} from '../utils/riskUtils';export default function StatusBadge({status}){const tone={OPEN:'blue',UNDER_REVIEW:'medium',IN_PROGRESS:'medium',RESOLVED:'low',ESCALATED:'critical',ASSIGNED:'blue',CLOSED:'low'}[status]||'blue';return <Badge tone={tone}>{pretty(status)}</Badge>}

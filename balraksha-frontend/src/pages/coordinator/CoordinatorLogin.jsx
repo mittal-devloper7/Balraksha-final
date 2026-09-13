@@ -1,0 +1,1 @@
+import {Navigate} from 'react-router-dom';import Login from '../Login';import {useAuth} from '../../hooks/useAuth';export default function CoordinatorLogin(){const {user}=useAuth();if(user&&(user.role==='COORDINATOR'||user.role==='ADMIN'))return <Navigate to="/coordinator" replace/>;return <Login/>}

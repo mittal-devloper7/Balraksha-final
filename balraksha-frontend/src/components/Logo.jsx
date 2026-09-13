@@ -1,0 +1,1 @@
+import {ShieldCheck} from 'lucide-react';export default function Logo({light=false}){return <div className="logo"><span className={`logo-mark ${light?'logo-light':''}`}><ShieldCheck size={21}/></span><span>Bal<span>Raksha</span></span></div>}

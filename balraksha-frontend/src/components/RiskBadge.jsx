@@ -1,0 +1,1 @@
+import Badge from './Badge';import {riskTone} from '../utils/riskUtils';export default function RiskBadge({level}){return <Badge tone={level?riskTone(level):'blue'}>{level?`${level} Risk`:'Assessment pending'}</Badge>}
